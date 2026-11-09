@@ -1,0 +1,8 @@
+/target
+/.ssipool
+/.sshpool
+/.env
+*.pem
+*.key
+__pycache__/
+.DS_Store

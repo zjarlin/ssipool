@@ -1,0 +1,5 @@
+# 补丁的上下文空格属于补丁格式；保持历史实验摘要对应的原始字节。
+*.patch -text -whitespace
+docs/evidence/** -text
+src/ssi_probe.py -text
+src/ssi_launch_worker.py -text

@@ -1,0 +1,1787 @@
+{
+  "source": "https://github.com/zjarlin/sshpool",
+  "commit": "a85dc03e74dc873b59bc075a6c752ab95e0a5cc3",
+  "date": "2026-11-09",
+  "files": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "6b4745a150f3605e10be8294b15e2a5035c37e249c63a3569ecd2c8a21d0c22f"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "1bbab3b1a3600154b7776ce6cc2ce7a4dc73e0cc5787bb063694dbd2e8341d18"
+    },
+    {
+      "path": "docs/evidence/ssi-20261105.txt",
+      "sha256": "a89d798fc6172a8c01e64fe8263b5a83c5a6db620ae62e78189c4828ed6bd612"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-compat-a.json.gz",
+      "sha256": "36ca33c9334955ccb842de6bb595daf17ef694b87c14ef7a4175961d43ef2c47"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-control-a.json.gz",
+      "sha256": "9b06e1f411a3b63c1bd054b8d86f0d92b4ae1d5caf382546970ebbeaedc540ee"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-pair-1000-a.json.gz",
+      "sha256": "dfc9d19319d03b0f476d53b4a94f2c3a2018378a96f790af69074374f676260b"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-pair-1000-b.json.gz",
+      "sha256": "e7937eb4864cd585816d5f821718387a7d286d8fc66c9c4911e0b3fa67f0da7b"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-pair-off-a.json.gz",
+      "sha256": "fef85da3081b391cba5189331d921c58c23e660c4fd9e46711043a6fafcccd62"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-pair-off-b-failed.json.gz",
+      "sha256": "1afd2591cd81eefc4daab8f6c98ba2ecb023c730eef304ce380d424d94691812"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-pair-off-b-recovered.json.gz",
+      "sha256": "e0cf1e88f2199edd0808fda31e7a2b1ba508930ec2b657f4cbdcb7ab9ad43021"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-pair-off-c.json.gz",
+      "sha256": "8480addd72aab11eff4625913c9c190fe3dadec41f46735bddbf2738fcee5caa"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109-sources.tar.gz",
+      "sha256": "3ba556883aaf05e13dbe634035fcb26ff202685d884cb0494a4b45710d3c9583"
+    },
+    {
+      "path": "docs/evidence/ssi-atomic-grant-20261109.json",
+      "sha256": "3bdebb92d53f26ca23fd8d4d190163f92e7b68576ed0f591bf5aeb01cadc873d"
+    },
+    {
+      "path": "docs/evidence/ssi-clock-baseline-20261105.txt",
+      "sha256": "e4173c7dbe6597a6f0f54d18de15980567f4c3d8c2edf3a79e4b9040c78cc82c"
+    },
+    {
+      "path": "docs/evidence/ssi-clock-control-20261105.txt",
+      "sha256": "26b0a06e8d8975c63216f0b0d1b7815e790a297543731433de67d63ab0c3a806"
+    },
+    {
+      "path": "docs/evidence/ssi-clock-offset-20261105.txt",
+      "sha256": "c3f0f5902e53318f736adc8158394ce80e95ff315bf9e02d261fb11666b30379"
+    },
+    {
+      "path": "docs/evidence/ssi-clock-resume-20261107.json",
+      "sha256": "de3ee2cc578205a343d08fa39a72cffbbadc0d2699232327e79cad66ea815582"
+    },
+    {
+      "path": "docs/evidence/ssi-clock-stalls-20261108.json",
+      "sha256": "d6b5f3ade2d5e8829500669f1ea9dc389eb4a6e6f945bd026b110006ce41bc68"
+    },
+    {
+      "path": "docs/evidence/ssi-copyset-retry-20261106.json",
+      "sha256": "b648bb6988d71bb75e98e90a91edac9d70ebc39affee0ab2393a7bc801cdb2dc"
+    },
+    {
+      "path": "docs/evidence/ssi-device-memory-20261105.txt",
+      "sha256": "d1eeac151d37cef11319783aa0d11759518b311419f4c081a62b6904e425e0f1"
+    },
+    {
+      "path": "docs/evidence/ssi-device-order-20261106.json",
+      "sha256": "0b8ea7a4aa87c6ca39ff322ab8a719efa64b90fa0ce239ab8750a1dd2bdbed34"
+    },
+    {
+      "path": "docs/evidence/ssi-exchange-accounting-20261106.json",
+      "sha256": "4583389c8683c16b4ef1e5d2ace46aaf2ff2b926b960ca0fe2cde04ac7c0d869"
+    },
+    {
+      "path": "docs/evidence/ssi-failure-propagation-20261106.json",
+      "sha256": "a7242c2fdbe38ead867403534e34ce6e2be9f779ac0e05c926eb1eb840799e13"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-control-1000-a.json.gz",
+      "sha256": "2d7bcf871522388c03f89e3c62afb203d7c52d1e9e47efbcfdafd4ed7cffbf14"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-control-1000-b.json.gz",
+      "sha256": "6f44fd96e97242347228e30cf3443c1760969dd7380ed4a3739f3dd0dfb70769"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-control-off-a.json.gz",
+      "sha256": "d4dcc5a9e72d3a4b32449699cd9b8061718def47f287d532375691fd36301996"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-handler-1000-a.json.gz",
+      "sha256": "849b141c1258837e4ea4d0aae13c2de8e86aaa81d363bac51ab7e2536836c4d1"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-handler-1000-b.json.gz",
+      "sha256": "a28617539251a34b3bf3529d8f5481a475b6201bc983b3067dbbf0d0e9fea816"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-handler-1000-c.json.gz",
+      "sha256": "478aeade12c33069f19d0660e91cab51a755f151325763b23d4a2b8cd3568578"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-reset-1000-a.json.gz",
+      "sha256": "e0eeec59cd4e4feb60f9ff87e5b93598b918963b9390cf8b58b73ec0cc2f93e7"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-reset-1000-b.json.gz",
+      "sha256": "6e4396f3836a0ea1a362604a3febcd6809f10d88f39f79169298ca56e067b0e3"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-reset-1000-c.json.gz",
+      "sha256": "ee26f1bb96fb54b038127c7910a3aa2dcb736cede438621f7308ed70332765c0"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-reset-1000-d.json.gz",
+      "sha256": "cad46b4ff8403d65f7540408bcc8e511398a65927c415306c304a991619a05a5"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-root-1000-a.json.gz",
+      "sha256": "1ae82eb295666a9abee27b32fa6d7bd275febcb2a2b3a810fecb3dcf6a3514e6"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109-sources.tar.gz",
+      "sha256": "ad158205bfb8bc38ed2c1ff4437857bc54042782a07974eb3bb14390b21dc0db"
+    },
+    {
+      "path": "docs/evidence/ssi-grant-cancel-20261109.json",
+      "sha256": "13cddb08f170ad7310d5bbb2f67e1e8e0bd1e65d85c9158b5da17bf720510b89"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108-control-b.tar.gz",
+      "sha256": "6d3a2e2545390513a398d1a4dbf100ab1716ab03aeef26570d90d322383ba7bf"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108-control-c.tar.gz",
+      "sha256": "c84d694ccd3a105a3c9f0a5775880f91bc717b48ca135e3dfdeb2bae380c7f5a"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108-control-d.tar.gz",
+      "sha256": "7d1dc2b4af51705aed427ea750eb298db2921533e721214d02da9653d70e710f"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108-pair-a.tar.gz",
+      "sha256": "4a4957ec46f354afd747da7b6aeb6ae6b6d4a1a7cb8c1709bd5cc8bf7ebef61f"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108-pair-b.tar.gz",
+      "sha256": "297f3696dbcf3a1561510b269be84efdd9263ca073381f17c7135b33f4fac5ea"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108-pair-c.tar.gz",
+      "sha256": "a3253c49eb41bdf03420e5c23bdd05cb07ac129c748f4381d97421647d9d0c07"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108-pair-e.tar.gz",
+      "sha256": "439be8f3c2907783d1e0011fc91264c86d86a3720dccbf06c76c48f83e6ed9cb"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-irq-20261108.json",
+      "sha256": "6a7c2d571c792ab79d7df72e97d3f127577c65310aca64b0b073ca8d84ec0f38"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-timers-20261108-control.tar.gz",
+      "sha256": "adbca96cfe97a3c93f677ed6daa0eacda06edac56618547095d9bb494da3eacc"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-timers-20261108-pair.tar.gz",
+      "sha256": "8d0fa76bfa690ee73b4181e261ccd1ff527647afe5563977f5f02c1d13470836"
+    },
+    {
+      "path": "docs/evidence/ssi-guest-timers-20261108.json",
+      "sha256": "f0e9a78a5c5d789c21199c7ba23b9bd062bcdd38a3c3e87520ec0683541ea434"
+    },
+    {
+      "path": "docs/evidence/ssi-host-timers-20261106.json",
+      "sha256": "c69190892ef801037f9c4792cba14e07a285c63bd3051d90eeb47cceb3f59343"
+    },
+    {
+      "path": "docs/evidence/ssi-ioctl-admission-20261106.json",
+      "sha256": "81575c0a2ab26819d8b6c42f1431cb47b07da8fb016f4c26025ca5fd0cc30c2c"
+    },
+    {
+      "path": "docs/evidence/ssi-kernel-close-20261108.json",
+      "sha256": "a5354755bfd62ef5bc14f69f96081ecba41ec9fdd5b756e9db1ae78ffd8455af"
+    },
+    {
+      "path": "docs/evidence/ssi-kernel-drain-20261106.json",
+      "sha256": "5287a431c7efe8dd0515ec9e1f61af4d9212d531e1a9cce75d200d0120729209"
+    },
+    {
+      "path": "docs/evidence/ssi-latency-20261106.json",
+      "sha256": "63e0b2dd4be965d093309b4d92002748249719cebbdda686c418eff9ea514149"
+    },
+    {
+      "path": "docs/evidence/ssi-launch-admission-20261108.json",
+      "sha256": "be9a478b84ba7bf8f8ff6dff229b0c82cd2042f123f88ff7eddfcd69ecd709c2"
+    },
+    {
+      "path": "docs/evidence/ssi-launch-development-20261108.json",
+      "sha256": "b94910f4749f4e30b58820e2a4de802e35ce6a953e33331d77d0022a7e955fc5"
+    },
+    {
+      "path": "docs/evidence/ssi-pf6-node0-profile-20261106.jsonl.gz",
+      "sha256": "8785c6d8f7e195f6d7372434ff22ab61698175650791399da64c801eabeb3958"
+    },
+    {
+      "path": "docs/evidence/ssi-pf6-node1-profile-20261106.jsonl.gz",
+      "sha256": "36c6e6a6e2b73353981ea6a80dbf165b9c8955cfd6b918a9f653a432bffd1fa3"
+    },
+    {
+      "path": "docs/evidence/ssi-pf7-node0-profile-20261106.jsonl.gz",
+      "sha256": "42dd71a60316f95aaecbb1dadf034a47f4e4f06a55a212e5543b5994f945a771"
+    },
+    {
+      "path": "docs/evidence/ssi-pf7-node1-profile-20261106.jsonl.gz",
+      "sha256": "12e75606e75560facac092b986c88e0bedc0724f513f11789b13371c882884f3"
+    },
+    {
+      "path": "docs/evidence/ssi-physical-host-20261107.json",
+      "sha256": "7f9a13e9753f7ebe954545afebbd40b9c976e6560d539e3aef6615655e028f54"
+    },
+    {
+      "path": "docs/evidence/ssi-physical-preflight-20261107.json",
+      "sha256": "7cfccf3167ca80b1f87327b1d35a0d31b58c9f4af06425a73612436d27f2095b"
+    },
+    {
+      "path": "docs/evidence/ssi-pin-lifecycle-20261106.json",
+      "sha256": "0955d1697d5b5727ece1d350f774c33f68d02d2abae248888bc24073fb437ff0"
+    },
+    {
+      "path": "docs/evidence/ssi-pin-release-20261106.json",
+      "sha256": "246098e74ee4d94f4cbd5f79f1c61c416dcb12ef5936d6313baa0db15b295116"
+    },
+    {
+      "path": "docs/evidence/ssi-pvclock-probes-20261106.json",
+      "sha256": "f24b2249a12226db433e07973acaa1d40e22ed6b75c3bb37b35b76aa0dda8895"
+    },
+    {
+      "path": "docs/evidence/ssi-pvclock-workspace-20261106.txt",
+      "sha256": "0ba82338a7422f080848debaa7be43921eee97e68988422ff6edfb307f31d62b"
+    },
+    {
+      "path": "docs/evidence/ssi-qemu-close-20261108.json",
+      "sha256": "b3fb50832578cb2ac24a1dfe0d6873b24599bba68b37b477fb600f30df5c6453"
+    },
+    {
+      "path": "docs/evidence/ssi-qemu-map-failure-20261106.json",
+      "sha256": "43d66f42a19cc4172f76cf0d81d833ecb2097ddeb0cea928e4509f181106d42d"
+    },
+    {
+      "path": "docs/evidence/ssi-receive-probes-20261106.json",
+      "sha256": "3649062976e1f6976ff3c9c5bf5b16a70795cba9e17ee548d5c9bacc1b7b153a"
+    },
+    {
+      "path": "docs/evidence/ssi-receive-workspaces-20261106.json",
+      "sha256": "120e2e83f243045624cf52d298e9aa5de62d6b25c961ccd30fc1a27049926b4d"
+    },
+    {
+      "path": "docs/evidence/ssi-request-cancel-20261106.json",
+      "sha256": "f93703ebd68ca21fe57b34837fc0e63b44564c5c710f29499f7b055bbe7785e0"
+    },
+    {
+      "path": "docs/evidence/ssi-request-safety-20261106.json",
+      "sha256": "3432e36a08b5c5269fd49e685bab0a4688665f5062825a999fd9fc38af4af664"
+    },
+    {
+      "path": "docs/evidence/ssi-reset-router-20261107.json",
+      "sha256": "2742d6916db02b61f11a79d5f5b049aa39409ffbd86e09c77b3333b7a3bc13b2"
+    },
+    {
+      "path": "docs/evidence/ssi-router-drain-20261106.json",
+      "sha256": "5057d664b353b73d10d9be5e5f82d3852784ae0e6fc0be7791b5dd24647422bd"
+    },
+    {
+      "path": "docs/evidence/ssi-router-startup-20261108.json",
+      "sha256": "aaa3195c4d2d89da1bc38ac96509812b16ad8ba480ebcd9d5631990610043d16"
+    },
+    {
+      "path": "docs/evidence/ssi-rtc-20261106.json",
+      "sha256": "f82b3b676c8c48bad743c0422ef79d2b3d74cc4aae447d270b157d823094bbe6"
+    },
+    {
+      "path": "docs/evidence/ssi-scheduling-20261106.json",
+      "sha256": "42e615334fca1fa158a1a0f5d52477afe9cbf1bcdaa76da76d71d34aef985e89"
+    },
+    {
+      "path": "docs/evidence/ssi-shutdown-flush-20261106.json",
+      "sha256": "1a45a91f98b0e52dfd63751173d38fafdbb2abfd16dc41c6e900a056726d42b5"
+    },
+    {
+      "path": "docs/evidence/ssi-ssh-control-20261105.txt",
+      "sha256": "bd79e972535d47564d0b2f82298124a04a65c9ea9719110dd66168982f196ce6"
+    },
+    {
+      "path": "docs/evidence/ssi-ssh-network-20261105.txt",
+      "sha256": "2588a701412bd9a814c9d81bc198c8e561b65f3192e6d16b6b818990c86eb928"
+    },
+    {
+      "path": "docs/evidence/ssi-ssh-pf5-20261105.txt",
+      "sha256": "c34df6f30e843ea2e01f02472ca2843aeb89581af65dc45328077ac050dab525"
+    },
+    {
+      "path": "docs/evidence/ssi-startup-20261106.json",
+      "sha256": "9b3efcafc2f4bbb25aa3319a0aa06aced3b95602bb5060280d49106fdf1a4df9"
+    },
+    {
+      "path": "docs/evidence/ssi-steal-time-20261108-pf28-x86.c.gz",
+      "sha256": "2f8712d765ffc7b7845d1494348480337301a55a79a3e0f9f7bc3f19fc3130c7"
+    },
+    {
+      "path": "docs/evidence/ssi-steal-time-20261108.json",
+      "sha256": "6e5d0d14e4242c5f3b2580a8b862ed8b18a6ed15032d2a018c50f6fe9035454d"
+    },
+    {
+      "path": "docs/evidence/ssi-stress-20261105.txt",
+      "sha256": "ceb6aaba1cfdd6641eff4cf43c34b973bc8979cfc975a4174723054a90e4e0b3"
+    },
+    {
+      "path": "docs/evidence/ssi-stress-control-20261105.txt",
+      "sha256": "bfb5f3816ded1f074129015f605675711706f735804129ab861527f33d5d3a32"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n0-37742-b.json.gz",
+      "sha256": "78e4d10a6d6d576d95ccd84403f4d8fd32f07c1fd77093323082f69eeefd990c"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n0-37742.json.gz",
+      "sha256": "3584f8d635b8b33f9b97dfebf55dc59d70426a1fdc2e10d1b647e27ce3b7f811"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n0-40042-b.json.gz",
+      "sha256": "0d9a046eba38d0d9e13b958ea4b007ca576221a180a14d5e6c52c464b6d97b09"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n0-40042.json.gz",
+      "sha256": "17154bd260d6c325ee2f6e6993a1ebabf61fbbd450011278197e667af34d6e04"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n0-foreign-local.json.gz",
+      "sha256": "0aa5a9752548ba5bef6383f78b047b2b0115be8d519ed4fcf3d00bb1671904bf"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n0-unselected-port.json.gz",
+      "sha256": "a478f7379716d27363ae23c40be4ca4b878d942a5fd58288d7853932a232967f"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n1-37742-b.json.gz",
+      "sha256": "7b606d737d2abd375d6bc53b80c8eb8fb2cc9299bd78cede1011d48b136094b6"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n1-37742.json.gz",
+      "sha256": "5ed5b9c9a2068109a7dc2e5309a7c296b093bdebcba65c18eae5ff4b2440f908"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n1-40042-b.json.gz",
+      "sha256": "bb7be183f31069b7d0846e79cab46c353409fc54f88833219b1e9aa90f01abac"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n1-40042.json.gz",
+      "sha256": "e7378f20c19d5a9aa63027d3fda995c98ea2b445de8d740c4853c71a7190c51b"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n1-foreign-local.json.gz",
+      "sha256": "e82403767881a8c9e1d4d4221cb1aafd553b33078c20063e303192242abdab30"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-fixed-n1-unselected-port.json.gz",
+      "sha256": "a0ea0be98342727706e54a13e98fa8510954d286c74b769050a421017c60da1c"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n0-36042-b.json.gz",
+      "sha256": "1ab3c4c80ccd9792499f1c6e841c515a2b69e36c34d26b989ddfc229478bd380"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n0-36042.json.gz",
+      "sha256": "65a0fcbfe10eeca5ba3ad2f0cb4118162cab836ca39a76093d51d2ad58302609"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n0-37742.json.gz",
+      "sha256": "11342991f71f177e28f908ab9a4af2eec66b7488f5757d178ce10398e475b5f2"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n0-40042.json.gz",
+      "sha256": "1a06c6fbe5db9062917af2421b5dc431859da27155b98465deae1018f4330a42"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n1-36042-b.json.gz",
+      "sha256": "0552c4096f541fd951e96e323361c213eb9ba05c966e8cad5c4b6ca7441d8277"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n1-36042.json.gz",
+      "sha256": "031b99d32fd6b248b2ea6cd0167f41ec7c190bb8b063073c4d06a7c490ff660e"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n1-37742.json.gz",
+      "sha256": "e8cbe20c5c5d11c1930debae560f2c7fadf8008dd53f958f5516336eb866df5e"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-legacy-n1-40042.json.gz",
+      "sha256": "bc7cdbefc7a56b04b2212c4eecc5b71b454d73cf040edd4033e3f842a9f709f3"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-native-fixed.json.gz",
+      "sha256": "359fe23a535602ada03c49bee736fb72a81c7a9d7d5f2b3a0c140bb74c032741"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109-sources.tar.gz",
+      "sha256": "3655d04012dda95446f8bf9a2ec1c4ddff0e1fc5e294e07bc10b02451a1eb2f4"
+    },
+    {
+      "path": "docs/evidence/ssi-tcp-reply-20261109.json",
+      "sha256": "5e877b9910b4b287882e074205c8dd6ec263ce5b509dd4caa15b99f830bc04d8"
+    },
+    {
+      "path": "docs/evidence/ssi-teardown-20261106.json",
+      "sha256": "50ccca15d721d7fabfc5fd7312a5082c27452cec7546692b2f7556795c7b17d1"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-control-a.tar.gz",
+      "sha256": "190982d7265c3531567961a85881e2b8b2558b617a3c0eefada5a6385db3b386"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-control-d.tar.gz",
+      "sha256": "eb142e23e9c197d5bc6f567f61226a2e0a08634a0078ff55f9ceef0a8beb46dc"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-pair-a.tar.gz",
+      "sha256": "cc308c8ee6aafbcddcc056c800a225a715955592c2cf9514deeb69d3ef379bb8"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-pair-b.tar.gz",
+      "sha256": "e226a8b158136989b73d6559d4c4614aca1e4178913a036c6a3667cfb0429705"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-pair-c-node0-faults.json.gz",
+      "sha256": "59947efb986b774d386406dd5613977c4bd18b177d98076dc904f6397b172a0e"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-pair-c-node1-faults.json.gz",
+      "sha256": "8fa5d58495d4fddc455e65b2f96e901685bd376f9482fabde943d18e8ca585f8"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-pair-c.tar.gz",
+      "sha256": "9050e6028eccc8a50b0614bea80f30f67db6cb2fa86a8458b32e0c77fbc2b1dc"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108-pair-d.tar.gz",
+      "sha256": "1ae4ce8f23d7d7cffe790821ee9174fe4b9171c2b49d775e20f8b154672c7919"
+    },
+    {
+      "path": "docs/evidence/ssi-timekeeper-writer-20261108.json",
+      "sha256": "2a144f1938ccdef739327a7b72d5d7393e3fd56cd7cea4e71b5d0ba079a3a116"
+    },
+    {
+      "path": "docs/evidence/ssi-timer-progress-20261106.json",
+      "sha256": "99d868d0e0848bf08dcc20293b4d7ff3b6e9505ad357710f006ee7309e2f4981"
+    },
+    {
+      "path": "docs/evidence/ssi-transport-fence-20261108.json",
+      "sha256": "c0d1b81252ae2f6e29e2ce567a99b9f65b646bc1aaec42fc4499f98eea4c202b"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-20261109.json",
+      "sha256": "f46daff25db430a1f11114d14329a4dc28f86df209dec43abb6c5900acf3398b"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-candidate-20261109.json",
+      "sha256": "c1bb4934ba56a2241438118dd4d122c2f7cc0f006c1dcc7fb13622e9f3063025"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-candidate-20261109.json.gz",
+      "sha256": "176716881dd8e5fa9b48c48dc0ec0c986d2698b907f0c81f523d6a3efadd9399"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-initial-v2-faster-20261109.json.gz",
+      "sha256": "cb4263afb8362066258f3f48a015cf8987604ef0c74519ae36f8daad6d84c6cb"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-initial-v2-native-20261109.json.gz",
+      "sha256": "643a22abb8553052005161f8abd1aeb916648f053082d18e8f57f22ef0401259"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-initial-v2-slower-20261109.json.gz",
+      "sha256": "3997f25c491038411fbb6a77d34d65b3c0025346326a64790f03253492224e63"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-initial-v3-faster-20261109.json.gz",
+      "sha256": "e8b40e10c379d70efab137375cd03940f791fa97f26f531db4337d17196b3d52"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-node0-20261109.json.gz",
+      "sha256": "f80c4ab982a3be436d24d2b72d21a4bd2b9124de22de3c19e0df0822ce82b999"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-node0-setup-failure-20261109.json.gz",
+      "sha256": "2d0dc6f3b95aff8da228949fe4b795229c26dfa122061c8289994415cc6982ec"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-node1-20261109.json.gz",
+      "sha256": "1d42ec576b31b873bd55dc21d839c0513e181dc29a213714a20e3cb0083eed7e"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-node1-setup-failure-20261109.json.gz",
+      "sha256": "7148dff78d8c45a9d955d0c8ebf1adc3f96aa1ef62c461297f3e750bf02cc3d2"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-frequency-sources-20261109.json.gz",
+      "sha256": "63e1ea3cf2f132aa992f8c7e52916a6dfce2f5636d661e85ac14af1342889964"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109-handshake-b.elf.gz",
+      "sha256": "a338d9a01bec67727637ccf0478067da2845a6dfdea2eeb5a7731ea36ad3144d"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109-handshake-b.json.gz",
+      "sha256": "f1a9518a785d97b7438739d304114995cb87d4f20519903138da96e8c245b335"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109-handshake-c.elf.gz",
+      "sha256": "038874244c79a7495e5d4b12feb4b62b54a340503da72ce898f688e4d3b6888f"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109-handshake-c.json.gz",
+      "sha256": "b559ca79f64b89bc4b5eabc38dd73b39fb69abe7a669d9bc9a7e276cfaa07cc1"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109-io-envelope-a.elf.gz",
+      "sha256": "5fed7a52be6e80ffb4f20638c63f70da58d36d3c46cbedafdcc8c481a641bd81"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109-io-envelope-a.json.gz",
+      "sha256": "bf32aeb3d8d8a27e84a5200b798a6e9cdbb276309b804a97c626eba40eaa6f94"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109-sources.json.gz",
+      "sha256": "7f7088d7c43e0d9958468365085ee1ed4081b2333554ce62a860c3a97a852c8e"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-multivcpu-20261109.json",
+      "sha256": "bbe6226ba7040d100b9e98a82c27e34a3f678b2175fb587c9daec17cb289edb0"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-scaling-20261109-pf31-off.json.gz",
+      "sha256": "83c769b16e171343de88949ff9299fb3dc4ef9af0ef8769b5f82e6fde67fc098"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-scaling-20261109-pf31-on.json.gz",
+      "sha256": "329bb1c28720ed7d1f4aa5be67c5d43d66a5ab76bd2947c33b846eb4d4efa0bb"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-scaling-20261109-pf32-off.json.gz",
+      "sha256": "91c0b8124651bb4c1d34997213f878064cbaf171136816799aa6b535e618eb02"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-scaling-20261109-pf32-on.json.gz",
+      "sha256": "3f02286b67b51cc9dd32283abc5de3eaa81ac8f93e85dc4de63ddecf1c0bf88d"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-scaling-20261109-sources.json.gz",
+      "sha256": "ca01d150c1b7b5ecf82cd17582e7ac628510f6c19b2bc3cb99427520befeff46"
+    },
+    {
+      "path": "docs/evidence/ssi-tsc-scaling-20261109.json",
+      "sha256": "540e3eef5ef77acef2b5190df5bbc43ce6d02cc07c886f7528814d8674f2977c"
+    },
+    {
+      "path": "docs/evidence/ssi-vcpu-residency-20261106.json",
+      "sha256": "d0caf6725fec4921ef22796eaf3fce5eb3873f382fa7086ba3ddd248cede18a0"
+    },
+    {
+      "path": "docs/evidence/ssi-virtio-dsm-pins-20261107.json",
+      "sha256": "4142b542098f91976ef623089bb87d15d8baf9d9ea3ee10da71b2fe3b7d14fe7"
+    },
+    {
+      "path": "docs/evidence/ssi-virtio-pending-20261106.json",
+      "sha256": "d97673cc7c94bc84207bdb6900bf2865aa30eb13e801e7f4415d39a902bb7116"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-control-off-b.tar.gz",
+      "sha256": "63097007840d18fc8ba34ce89846782447e34b7474f4c205bb73ed5d12526ac1"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pair-1000-a.tar.gz",
+      "sha256": "1287fe3b19ef0df73fbaa3cae6dfe76d04a827d285596342f139889e9e65269a"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pair-1000-b.tar.gz",
+      "sha256": "32e2ad5f4cd9fd42553bfc0560d9b7e33964317ae5409f0eece17882e384d985"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pair-off-a.tar.gz",
+      "sha256": "8707bce234dc8f369b19ffa8bc00c32d6040079449d4ba1d7d7e44a50086265b"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pf29-grant-control-b.json.gz",
+      "sha256": "4474fb27574a0c2b65f4195f8ba68c72c64cf4d607e0b944d0ca6bb1d56ef344"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pf29-grant-pair-b.json.gz",
+      "sha256": "caf321641715fb0a8987f8536357a30329a64d29bca3e4ae1d7c9072812ca163"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pf30-grant-control-off-a.json.gz",
+      "sha256": "96ed66f77acda45f0f51dd9948019c472138399d2ff960664d9ce185cf3c21bc"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pf30-grant-pair-1000-a.json.gz",
+      "sha256": "fcdf5b58bb39a70f1b037a3688863879176c313e903aebd3fdcde1d4d1cc3535"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-pf30-grant-pair-off-a.json.gz",
+      "sha256": "541463733fb16c54e9514d5e76651e457fc898c47d8d08c0e23cbd14efd29527"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108-sources.tar.gz",
+      "sha256": "155ef0bae9a268bf3fdecc04c93e1a17aa738db0f8923263f4a49f4ffc887a93"
+    },
+    {
+      "path": "docs/evidence/ssi-write-grant-20261108.json",
+      "sha256": "9898015b662db9564a503f35a6716406283a0adc787f0d63e8a93238ffe878fe"
+    },
+    {
+      "path": "docs/ssi-atomic-grant.md",
+      "sha256": "7b2ceb6df5b4394d995271c5f5b9df176c56aa21f921f4544835b96200b6fbb2"
+    },
+    {
+      "path": "docs/ssi-clock-resume.md",
+      "sha256": "9846acd1991334c91291a0107ecc8cdd3a17583fa1c0a45b9085da0af0b45f86"
+    },
+    {
+      "path": "docs/ssi-clock-stalls.md",
+      "sha256": "f1f2f144cfa332ae3ff82ccb6f98838fc0ceb134b70583bd73d7fb15f087cb3d"
+    },
+    {
+      "path": "docs/ssi-clock.md",
+      "sha256": "4cdb8c18ffa454a92f863f3224538ba9950025c6d1ed104a3f5a79b5b8fa972d"
+    },
+    {
+      "path": "docs/ssi-copyset-retry.md",
+      "sha256": "30f5f330627723b2b4ad6190381391cd4a7cfa78fc9f48f7815da35f699f17f5"
+    },
+    {
+      "path": "docs/ssi-device-memory.md",
+      "sha256": "38d570fa8a3644956a1773e9baa5d189af7e1c2e845aff8accc1c57c5888a9e9"
+    },
+    {
+      "path": "docs/ssi-device-order.md",
+      "sha256": "12297227fb3b1e68bbad3505281f5791946cf8fe0af20fe8b5fe65e05d6c34a2"
+    },
+    {
+      "path": "docs/ssi-exchange-accounting.md",
+      "sha256": "f640e702d1ea7384939f4128218020edbb47c33175718b2abe15feb577ef5a9c"
+    },
+    {
+      "path": "docs/ssi-failure-propagation.md",
+      "sha256": "910983cda7644258f742acf9ea5f236da8adae62c699e3539e9dd6581c3d1127"
+    },
+    {
+      "path": "docs/ssi-feasibility.md",
+      "sha256": "f890a842ee85695abb06d11b213ba73c7b9ad0ac02529f143307c7a0c0965d10"
+    },
+    {
+      "path": "docs/ssi-grant-cancel.md",
+      "sha256": "41c73acc46035dd86bdc8d226972a38469fea9bf5c0f45c23ebf90f52e996487"
+    },
+    {
+      "path": "docs/ssi-guest-irq.md",
+      "sha256": "e8422191d4fd2631a1c3da79573f861614cd4c12000977e9836c1d93a636f956"
+    },
+    {
+      "path": "docs/ssi-guest-timers.md",
+      "sha256": "b59cbfe754905961960bbf692be1a1dc9fd4eb2842d7fcba3f5d53940a2b0db4"
+    },
+    {
+      "path": "docs/ssi-host-timers.md",
+      "sha256": "e306a8a8b89351038048532beacff02295898cff7dddc0d8cbde9d82f68aa58b"
+    },
+    {
+      "path": "docs/ssi-ioctl-admission.md",
+      "sha256": "f1ad236c9cf0a5233dd78985c1229590bc17280f32ac3ac981bd9a31641607e9"
+    },
+    {
+      "path": "docs/ssi-kernel-close.md",
+      "sha256": "7c2173d00a03cde131aac8fa9bcd1bd4979d5115c068c63de78306c2559b0e7e"
+    },
+    {
+      "path": "docs/ssi-kernel-drain.md",
+      "sha256": "56d6e8e8ad0dca4e4a874eb1434b1c8fa7ab8f8eb05dbbaa1e50f9fe25db79e7"
+    },
+    {
+      "path": "docs/ssi-lab.md",
+      "sha256": "09c7bbbfaa344fb54978810f50118ea0790e0ac097cde2e70210edf33cf8a16a"
+    },
+    {
+      "path": "docs/ssi-latency.md",
+      "sha256": "3b1e039f22681494b5401e7c74493bf37ec4b692ec095f5c3694664388bd7512"
+    },
+    {
+      "path": "docs/ssi-launch.md",
+      "sha256": "7bc2e204be3696e4f72dddeb19c646d7dd9dd2731f19ce83263cbab067e0bd8e"
+    },
+    {
+      "path": "docs/ssi-physical-storage.md",
+      "sha256": "3124c6107d5d98c060c4a30f8685c95ffd0a053dc613184cd4190db6133762c0"
+    },
+    {
+      "path": "docs/ssi-pin-lifecycle.md",
+      "sha256": "ea97b3a8239441a1b6fac27b7652848052f30869883ae40f8a496e99ddc7cfa4"
+    },
+    {
+      "path": "docs/ssi-pin-release.md",
+      "sha256": "d9c85956eeef1237b2021f682bb06dabc6c1962b29cbf867a56856efe08dfca5"
+    },
+    {
+      "path": "docs/ssi-pvclock.md",
+      "sha256": "9bc90a1693af31349c2fa1455f91325f7cee549a92e6d0355dc5722d17f9df0b"
+    },
+    {
+      "path": "docs/ssi-qemu-close.md",
+      "sha256": "721d0aaddfbeb070a84ee1169ead05ea2548c612322b460918ba347c21c20bbb"
+    },
+    {
+      "path": "docs/ssi-qemu-map-failure.md",
+      "sha256": "0192a689319661bb1694c42209d4d38ad3e156f77152ecb3e9b9ec2c36381f8c"
+    },
+    {
+      "path": "docs/ssi-request-cancel.md",
+      "sha256": "d9a10e6b4a0fb3e2cdf83a0e8e6b4510945bfcf50e536b5721731ba66815f70b"
+    },
+    {
+      "path": "docs/ssi-request-safety.md",
+      "sha256": "434209800131aebbbd88a2827a8bf6c0528eb453e5d573e28639cc70f09096ba"
+    },
+    {
+      "path": "docs/ssi-reset-router.md",
+      "sha256": "616b06a0078c442c42fed3bed3cc371d67c879ca0d523cd12aff4f4d63942583"
+    },
+    {
+      "path": "docs/ssi-router-drain.md",
+      "sha256": "4403a802821fc88b19e766f22fcb4eb39838a661f4677b06bc09c5189253e3be"
+    },
+    {
+      "path": "docs/ssi-router-startup.md",
+      "sha256": "f62702531207785a306958d5cf35c2e67eddb0ea670dc01052d93bdbde70dbd9"
+    },
+    {
+      "path": "docs/ssi-rtc.md",
+      "sha256": "41ff2de98393bd7159ad86c2ff01192327865f23895073f775d24e8e8fe4f653"
+    },
+    {
+      "path": "docs/ssi-scheduling.md",
+      "sha256": "f4095f06d05cac76431e85c6ec42e25774e5c9bcebacc7ffb5934a97c70c8d8e"
+    },
+    {
+      "path": "docs/ssi-shutdown-flush.md",
+      "sha256": "621c3c4223b4b8fc000176649d1e4cae6c84bc07928fda3de3e6a309b1c7e620"
+    },
+    {
+      "path": "docs/ssi-startup.md",
+      "sha256": "32bd1be5d830fe024b08fb4dfc224ced6d666c7212bf14670ee804643107c0ba"
+    },
+    {
+      "path": "docs/ssi-steal-time.md",
+      "sha256": "5ea4c79a8d1015523466a0a42957e4194fc42b20dffc66b7cd6dcc064bfa9b32"
+    },
+    {
+      "path": "docs/ssi-tcp-reply.md",
+      "sha256": "ffc09b2971b7e4b7879f6dbd1965e664cfa5aa307a9a14aae42f5c29e76758bd"
+    },
+    {
+      "path": "docs/ssi-teardown.md",
+      "sha256": "6570786f6cfb69be0086d64d6f4b2b91e6fb11d0591c6bf6f252a7a15091e560"
+    },
+    {
+      "path": "docs/ssi-timekeeper-writer.md",
+      "sha256": "a8ecbbc13cdd7088eb3ee6e8075320e5b9e6d9a76b0aa6051eb8dca24f849592"
+    },
+    {
+      "path": "docs/ssi-transport-fence.md",
+      "sha256": "bfcda18938fa4ea895107be96380f74e5b4f046b2ad8627d2e4c47a339bd2dba"
+    },
+    {
+      "path": "docs/ssi-transport.md",
+      "sha256": "0f7070e3cc367328ffbae00aa60e857de3c80cf88164117615c8536eede00249"
+    },
+    {
+      "path": "docs/ssi-tsc-frequency.md",
+      "sha256": "41336ba57f3861816bc38aa239d1bf98e6843d470eb4b57189d49cde15bbc00f"
+    },
+    {
+      "path": "docs/ssi-tsc-multivcpu.md",
+      "sha256": "6f476c837ab56444a6155e4b32b94d920c47743fc5f2c6fcca3731ca60f511f2"
+    },
+    {
+      "path": "docs/ssi-tsc-scaling.md",
+      "sha256": "5a5e716645f87a2920b670d35f49ce3682a9e1e0a1ddbe4177f1187717a9c06c"
+    },
+    {
+      "path": "docs/ssi-vcpu-residency.md",
+      "sha256": "9badba4686b2be042f5763b734c57a33b7309f2dad37493dbe572d93cf04c581"
+    },
+    {
+      "path": "docs/ssi-virtio-dsm-pins.md",
+      "sha256": "dcb6b3e4421caf771ad05e0a3af6c08be4e21629565a87057feac866e01558e2"
+    },
+    {
+      "path": "docs/ssi-virtio-pending.md",
+      "sha256": "6bfa934b1750d621475be0680948ef46a7b42d6785f4d39cfaef40feae2e64ff"
+    },
+    {
+      "path": "docs/ssi-workspace.md",
+      "sha256": "c05bf3b74f8efe8fd8ac6a8c5cde9bbcfab4d0c2d72c9bd8d48f3242e007b556"
+    },
+    {
+      "path": "docs/ssi-write-grant.md",
+      "sha256": "d21d70123a0d10ab9fc80cae203eeba23bfeaf2834792c351342deec78312af4"
+    },
+    {
+      "path": "features/110-pooled-linux.feature",
+      "sha256": "016f1862ce8ff2d4afb71fb940f4bbd5316b9323e2a316ad7b33ff3770adccbb"
+    },
+    {
+      "path": "features/130-ssi-lab.feature",
+      "sha256": "f2867e98be70fedfb1c0ea173a0cd514c849c0beda82fb7511aaca687f4c7586"
+    },
+    {
+      "path": "features/140-ssi-workspace.feature",
+      "sha256": "1f29630e38471b90da470611738d67a4ba6815892c07c0842f2db86874233a9a"
+    },
+    {
+      "path": "features/150-ssi-device-memory.feature",
+      "sha256": "9daf7cfeefebf7ca9b20d981b0502e1cdb662792ce9076eefa3232270db1783e"
+    },
+    {
+      "path": "features/160-ssi-clock.feature",
+      "sha256": "7db417f1c2a2b3a9d0cee84df5322333c06e8018fd5ee90548be5f7477d33e89"
+    },
+    {
+      "path": "features/170-ssi-transport.feature",
+      "sha256": "f8be7535d36154af40ff1f19abe5299edbbdc90d2c9c8f9055d62ed8d6e0278e"
+    },
+    {
+      "path": "features/180-ssi-device-order.feature",
+      "sha256": "3158c156145dd5f7e3fbd60bd60fab0cf142fdf6b2068a676912582c2ab7e91a"
+    },
+    {
+      "path": "features/190-ssi-physical-storage.feature",
+      "sha256": "0bc9f3ecbf976c759b659d554d0bcce58d60502fdbfc9a26f2cbb088125e3fa7"
+    },
+    {
+      "path": "scripts/feature-status.py",
+      "sha256": "7f6b575097a0dad655244c434682c6a971feaf38d1be618b161b7e37a4f0c789"
+    },
+    {
+      "path": "scripts/ssi-lab/COPYING.GPL-2.0",
+      "sha256": "dd3ce02338c3a48abb6ba59b48809f7108a8bd242cb0cc8be90daafa30707c28"
+    },
+    {
+      "path": "scripts/ssi-lab/README.md",
+      "sha256": "f885abe0194cc68222c90521a2ef78243752925b6d3f8b70da2377b9e3213441"
+    },
+    {
+      "path": "scripts/ssi-lab/build-host-kernel.sh",
+      "sha256": "56151ac89662004ea815dc57251be60f1d9e3690c460d1000e8650da41820e59"
+    },
+    {
+      "path": "scripts/ssi-lab/build-ssh-guest.py",
+      "sha256": "1ee2410f30075bd10e7d9fe34fb71c4c4e02106a0a854cb1e8bbf93dac3db49b"
+    },
+    {
+      "path": "scripts/ssi-lab/capture-tsc-frequency.py",
+      "sha256": "d93bf2637f4777bda083aab4bfb18f998c913438bc9e529d6c0c80ac313d81b5"
+    },
+    {
+      "path": "scripts/ssi-lab/check-atomic-grant.py",
+      "sha256": "8410b4fff61d23d05fb29379af946cbd742d6c1324d9d50cacb2d44de99ece64"
+    },
+    {
+      "path": "scripts/ssi-lab/check-clock-resume.py",
+      "sha256": "fd9fdeb0fa8e4cd63d25e1ac87e4cbd329965bd0fe6cf5ead0954e5f57e7bbdb"
+    },
+    {
+      "path": "scripts/ssi-lab/check-clock-stalls.py",
+      "sha256": "41debd9a8b6f1745377cf15bd3a1d85a388722ec37ad21bbddecf7b6aec2534b"
+    },
+    {
+      "path": "scripts/ssi-lab/check-clock.py",
+      "sha256": "6b686408294d404466c008506d99efec42d47a00fb4c132103c03a6c2f359ce3"
+    },
+    {
+      "path": "scripts/ssi-lab/check-close-devices.py",
+      "sha256": "b7927cb827c5138e94af8f6d95e79ee4dab1524fd9b9d63ef64b24c30f8cc35b"
+    },
+    {
+      "path": "scripts/ssi-lab/check-copyset-retry.py",
+      "sha256": "faa21df47661f67db03bbf60a2b2d481c54489f380a0d1105ff4b5a3f7341c2a"
+    },
+    {
+      "path": "scripts/ssi-lab/check-dsm-latency.py",
+      "sha256": "845cf3dfbb29acbcfd5956aa2dae76e61fd365e8fa4f10c45bd6ba5b6263ca3d"
+    },
+    {
+      "path": "scripts/ssi-lab/check-dsm-scheduling.py",
+      "sha256": "8d0bfddbfcbb6a07ff3bc0e0325a5e17715fa0fd7dfddff7197a62921c3a5022"
+    },
+    {
+      "path": "scripts/ssi-lab/check-esxi-resources.py",
+      "sha256": "28fdb573695d475bc67de8a2194a85f8d09248c2423a69791103981a857ad172"
+    },
+    {
+      "path": "scripts/ssi-lab/check-exchanges.py",
+      "sha256": "054834451e613e2f657a7aa5d011253745740f0808ec76e94dd03cf643c8f818"
+    },
+    {
+      "path": "scripts/ssi-lab/check-failure-propagation.py",
+      "sha256": "e36e3569e8c4a4362c2cc1ebc4c977472638d02367a877fcecc2e9d220ee77a0"
+    },
+    {
+      "path": "scripts/ssi-lab/check-grant-cancel.py",
+      "sha256": "b3cf60a0b116bbb5a6a6bf0bd5121d7e5e22956b5eeb4fb518e14508eaef6147"
+    },
+    {
+      "path": "scripts/ssi-lab/check-guest-irq.py",
+      "sha256": "3d6823a25aa063caad94594cba6e4bc7aa1d765878565a3ed574e15f3cb74fea"
+    },
+    {
+      "path": "scripts/ssi-lab/check-guest-timers.py",
+      "sha256": "5bcac71701a1a5340db82f0eed4a7653c39b40e3c0b44edfd98cb9f963834e79"
+    },
+    {
+      "path": "scripts/ssi-lab/check-host-timers.py",
+      "sha256": "53625075baecc052f72668aa051c72444087a3ae72827bc3149924b9a220dab7"
+    },
+    {
+      "path": "scripts/ssi-lab/check-io-order.py",
+      "sha256": "0af82edbcaa00ea7a0ab92eb6a28d23c056e3a36c35327949e55591aed6efea2"
+    },
+    {
+      "path": "scripts/ssi-lab/check-ioctl-admission.py",
+      "sha256": "3613dc017d17d2f4f0a6150617526e13f02629fa20cf57f88d6ad018d550208a"
+    },
+    {
+      "path": "scripts/ssi-lab/check-kernel-close.py",
+      "sha256": "859ad6b103c663f7e7233ae7d0e3b8e304aeebf550d02de4e7092b0862d310ac"
+    },
+    {
+      "path": "scripts/ssi-lab/check-kernel-drain.py",
+      "sha256": "75074387c7c6ef9f9e1bf5c67e094f42388efe20ff7ea43262f69b4925aac7c4"
+    },
+    {
+      "path": "scripts/ssi-lab/check-launch-admission.py",
+      "sha256": "8033dfec999e7d7609c511015011e23c2e4b7409179314e02594394040c05500"
+    },
+    {
+      "path": "scripts/ssi-lab/check-native-trace.py",
+      "sha256": "a2e1611cd470786a0488a68a3bb9d61af12c467350350d1d19d4787766c4a748"
+    },
+    {
+      "path": "scripts/ssi-lab/check-physical-host.py",
+      "sha256": "d4a301bd66617e84fc0603d8f947a5c0c4452266054d9aae453d4c257d4a9c42"
+    },
+    {
+      "path": "scripts/ssi-lab/check-pin-release.py",
+      "sha256": "7fa0a71c8848bcfb9d125c16d7e4284e961022d26245c96dc222a2585be5093a"
+    },
+    {
+      "path": "scripts/ssi-lab/check-pins.py",
+      "sha256": "a52f2d18db0c9e58d1b730943ae2a30870b24b3ee53c2c9dc890472afd60a9bd"
+    },
+    {
+      "path": "scripts/ssi-lab/check-proof.py",
+      "sha256": "d0942632c5914e7ddf60c5314fcb0142d7e1b6f3c8db6965287b1b23f1b9ab9a"
+    },
+    {
+      "path": "scripts/ssi-lab/check-qemu-close.py",
+      "sha256": "141fc66731fba3392d7a61199f19c827f37f04ab16aa2c5d939d8df2a10ad082"
+    },
+    {
+      "path": "scripts/ssi-lab/check-qemu-map.py",
+      "sha256": "1a9f004c73632efce37b0a9ff389ef631874c2c086bec57bcc11bfe4787b133b"
+    },
+    {
+      "path": "scripts/ssi-lab/check-request-cancel.py",
+      "sha256": "6322524e7ccd345cf52e448a0be1c1f2cd585822d99ba746deb6b3a99bb8c00e"
+    },
+    {
+      "path": "scripts/ssi-lab/check-request-safety.py",
+      "sha256": "f85ffa22cd01b5dd4207618740d68b0c5cd10855b46477a7546b047dfe3e403e"
+    },
+    {
+      "path": "scripts/ssi-lab/check-reset-router.py",
+      "sha256": "52639f19f788a3b8f2fc7fb13176e491d9673e6cd7931eff5fd3bec0d6ea21d3"
+    },
+    {
+      "path": "scripts/ssi-lab/check-router-drain.py",
+      "sha256": "37e7ef0af7f1bb6a143b037bd052e0f9fbbe7b6544a275eecec0b08b9f42643a"
+    },
+    {
+      "path": "scripts/ssi-lab/check-router-startup.py",
+      "sha256": "f210df075e785fd2422d2f91a2104d36b42d55c906e62f513260f6b60ae58f48"
+    },
+    {
+      "path": "scripts/ssi-lab/check-rtc.py",
+      "sha256": "738a443ca4cd0342652707825ea18eddbfb145490fc4f1154aa40c66c21bcf2c"
+    },
+    {
+      "path": "scripts/ssi-lab/check-shutdown-flush.py",
+      "sha256": "6ece39d71975171c7c760d1f29806a813b23d9c32306ccab21a91984c3b9601c"
+    },
+    {
+      "path": "scripts/ssi-lab/check-ssh-boot.py",
+      "sha256": "07f026b6d7e5ed9443c2b4e7a613ce012fb9b70bf2bc15e8342f16d93315bba7"
+    },
+    {
+      "path": "scripts/ssi-lab/check-startup.py",
+      "sha256": "ce8bceadf9c80e2d40ba86988b13f6a58f3edb8608f4d0cca187e322d9e75008"
+    },
+    {
+      "path": "scripts/ssi-lab/check-steal-time.py",
+      "sha256": "9e0a407214323f95e30c46611e5e0e3dccb5be5fbb32e9c06ba66d711395c4b3"
+    },
+    {
+      "path": "scripts/ssi-lab/check-stress.py",
+      "sha256": "78b6a854f7182495a7ee7c946cb21dd69b739ffca6116f1ea9400de9a37c14d5"
+    },
+    {
+      "path": "scripts/ssi-lab/check-tcp-reply.py",
+      "sha256": "6dca7aee3a42248e1a5ec9061eb5a2fc74c7fcca56b1a1a1b83e9a00cd69f564"
+    },
+    {
+      "path": "scripts/ssi-lab/check-teardown.py",
+      "sha256": "619d2e0e97fd5ea2c4d3f6d8e0f9f65161f430489c29ef984e89eaa6772b798d"
+    },
+    {
+      "path": "scripts/ssi-lab/check-timekeeper-faults.py",
+      "sha256": "dfd7fc2d6be7906a17586c20ea359100b481f60af80a83cfac952d7d84bb3a84"
+    },
+    {
+      "path": "scripts/ssi-lab/check-timer-progress.py",
+      "sha256": "37560c3cb043e45474966709c1f952f09ec8d3e6ed51039374ba154ac3392fe8"
+    },
+    {
+      "path": "scripts/ssi-lab/check-transport-fence.py",
+      "sha256": "76d47cf5ee95cac419c86fb7c45053f3615349046fdb5cd6de6376ef0c162677"
+    },
+    {
+      "path": "scripts/ssi-lab/check-tsc-frequency.py",
+      "sha256": "3d63b93832b61779479e17be69a82ea24677981ffa894ae0c1091369c1f224c3"
+    },
+    {
+      "path": "scripts/ssi-lab/check-tsc-multivcpu.py",
+      "sha256": "cab81c5c2cfb208e750398c1b16c2f4d389e3920519bf6fbe835ba656ce760d1"
+    },
+    {
+      "path": "scripts/ssi-lab/check-tsc-scaling.py",
+      "sha256": "77efe836beba7d07fd9559fa7df463fe23320419581bc1a1e02dc21df6a2a6b5"
+    },
+    {
+      "path": "scripts/ssi-lab/check-vcpu-residency.py",
+      "sha256": "1de41c21dabada17763b8f7cf7265e48e9e6e197b5784e8716415a29baf1ca86"
+    },
+    {
+      "path": "scripts/ssi-lab/check-virtio-dsm-pins.py",
+      "sha256": "ff0b918116172b39a82c11e2972a4d708e8af678913db6ed5ad72264814469af"
+    },
+    {
+      "path": "scripts/ssi-lab/check-virtio-pending.py",
+      "sha256": "e7f0d36a32fe8ffe682bb536f1672eee5426fd6ac6725d1ebba878c034d5341c"
+    },
+    {
+      "path": "scripts/ssi-lab/check-write-grant.py",
+      "sha256": "04c775af83c7b4247412dc1a0cb1335a64a412b7c0598a2897fa5085635c5784"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/README.md",
+      "sha256": "13e693446dc628422f997eda82bd49f3ad64f66f4e8e4bae7f5511f3ea68bb85"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/capture-tsc-multivcpu.patch",
+      "sha256": "9218cd9df3fb03ba766f4caeffc9d230936c33156e63dbe8fcc8bc0243cd764e"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/capture-tsc-scaling.patch",
+      "sha256": "32f87f8e9cd18498a74c6774a2c95afe27ff0bdf036a2dab30e89b45dfb2ffcc"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/idr-exhaustion.c",
+      "sha256": "0f792967888a827679f25731ae6d427c5fe1c805b407c6ee8041854f2f030eaf"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-close.patch",
+      "sha256": "96ba0d2712324e16ae2797cd0eb41971af790aea2a9259c635236c2df9209b30"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-copyset-retry.patch",
+      "sha256": "cc21db0ade8c2cd993793733584fedf52cd384b3b1acb5670439fb9248d98dde"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-device-writes.patch",
+      "sha256": "5ac86b8d42ad35d17b33a2a7612c658bfa8e333e22e2f0d54d7149cc3512d190"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-drain-fault-order.patch",
+      "sha256": "ce9f222123373b585cd98fb1e86929044f34ccf5d3b7663d5a1da1ec8544b0f7"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-exchange-accounting.patch",
+      "sha256": "e9050123177b4e8a8155f8d7de52bacd861b11e809c06a8cbda20aeedd7b4e87"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-exchange-id-exhaustion.patch",
+      "sha256": "6530094b0edf378ede31f82f9812dcdca76ff9964ba5df548dd22d08d5d544a5"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-failure-propagation.patch",
+      "sha256": "48a9e9b7ddceddc08ce34af0ca39812055c429b53d5eacf66102a4d5f60cd780"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-host-timer-rearm.patch",
+      "sha256": "5361750394ecd6d3af60fa44ba8c0a2f5d58a4a25073ed1396c24b46397e8c0b"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-inbound-drain.patch",
+      "sha256": "addaaba5fc638f289c52e83cff0d05e5c9744932cbf7419e094ab1e04c2efd7d"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-ioctl-admission.patch",
+      "sha256": "ccb4d710873524448c1b7095453971ac5b53138a67438955189a180a5607e98f"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-pause-exit.patch",
+      "sha256": "179126e78283a5cdd6b73a9158ae301537716f6b658adf9b3e047eb8997e8c39"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-pin-lifecycle.patch",
+      "sha256": "6b225cf476f6b2aee27525f125acc300e70e6bcb6563944a4138b4096962a070"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-pin-release.patch",
+      "sha256": "fe8decfbb4c75d2dfe129bc99a225671aec60468abab8427114bd680ad13d9dd"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-pvclock.patch",
+      "sha256": "308ba1948aa7aee5748cd35cc5bdf913b6ec302e6f6c9779bd18e95f1c5f42da"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-receive-wait.patch",
+      "sha256": "f936084817434d75f41ada9a82614d0a58b9a153bd6d19eb17041dbfd407fe15"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-request-cancel.patch",
+      "sha256": "100602f1332c024b6464972572fe65f7b6169d325361e3f2cec9279b78d6594c"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-request-safety.patch",
+      "sha256": "0e643a0c75b6a06eb104c2e1ceb8c0269c8f6d51eb4c745817173f04cfe372a0"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-rmap.patch",
+      "sha256": "c3512795afcebb87631d52bb79e71fe48d609af74e635af6e5e57e634d46b951"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-startup.patch",
+      "sha256": "c93c4a36f1408cd869f68be56f94375ca822164835db999517f4d07c4a00507f"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-steal-time.patch",
+      "sha256": "f9ced014464c6398200736aead75f79ac26cc08c7dcd601dac87a9dca95b3afc"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-teardown.patch",
+      "sha256": "fba1711480857d27524110cd7c2dddd08f9368bdd3c481aa1c38eaaab78f6308"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-transport-fence.patch",
+      "sha256": "a145403f618b164f87f647aae76fbb5ad74b2b06ff9ec3f43a2318e74a4e8d99"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-dsm-write-grace.patch",
+      "sha256": "cb44e23ec267854bf29cc2769bf95b5d8e62aded6af6231583d3923c38fd9037"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-software-tsc-msr.patch",
+      "sha256": "24833ada3d11567c6486f45561c94899c54724867c2c4495147d08f3e43b700e"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/kernel-software-tsc.patch",
+      "sha256": "664ab6446b2cd6231958e66fd612149ff034db54b1fc8c07a7bced144731493c"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/probe-tsc-scaling.patch",
+      "sha256": "bfa421b7ae063df0c6033417e62c55edb14c8fb332471d09de2f397f775feda6"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-clock-offset.patch",
+      "sha256": "0717b8af923e2b684dacb96449662744fd37b08fa1b18411abd701054e99dde9"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-clock-resume.patch",
+      "sha256": "ad75855190bed1208d19cae722f0579018febce9723ffd103f3ab2baadebfd50"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-device-pins-probe.patch",
+      "sha256": "eeb1cb4761e51bbd9ba104b7e511f6e4d6a9f124c58e13784cb71fc5d883be5f"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-dma-unpin.patch",
+      "sha256": "7507c78e1de565b8b57bc95cf47c6928f60bc88419a88c4c893a8e735edd9f26"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-dsm-failure-exit.patch",
+      "sha256": "d6586d91ba98ac063755a1b8597d8d71d1b612ec87bb8fbf808fb60ae54e1da5"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-dsm-map-failure.patch",
+      "sha256": "aba7a93c1afc0d28ffde924aef84be19da04bb15f9037bc3ec872d00abef4128"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-dsm-pio-coalescing.patch",
+      "sha256": "7f6b1ce3ba7c62ad9edbe35104a5963622b63ef7561a94a43a35f7f6c45db58a"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-edu-delay.patch",
+      "sha256": "aab81d52f6b6429a4551ef38d9c36a82ab27893867e8d1fa0dbb6e523f73b5ab"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-global-close.patch",
+      "sha256": "5daf0a469e1ba222bd6473abfa1e369fb9601182b380d7916f42e08c758043f9"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-map-probe.patch",
+      "sha256": "13276a003db83e167e07baa17fbacea813360ce82d3f6b61d2ef6f57cf235f14"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-mmio-completion.patch",
+      "sha256": "832b90922fcc76fb239661e93f301a3ef869178b414fa3ce1a193874bc59765a"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-pf29-lab-profile.patch",
+      "sha256": "2ba5a2071c433f4aba9ac75321dd0e83c7e99e3f0afac24ac6537324a0e3f93b"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-pf30-lab-profile.patch",
+      "sha256": "1939e194c91fd4a39c8621a3ae88457581b45a1bee41bf756ebc12b71cfea064"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-remote-pause.patch",
+      "sha256": "fdd0c6b96e2c2e135980635cbaf120fdbd726931cc52959dd5c38fd9d3ead217"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-reset-router.patch",
+      "sha256": "9819277e9abc1a226e214e355481a88d02695ce7a481613b73e204567414dcf8"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-router-drain.patch",
+      "sha256": "917c1d2156af380475f3771cccb9bb6ef51f1eda7f41458c1499c21b0addbd67"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-router-startup.patch",
+      "sha256": "23447b265b96b4afc34022d2d00f14cbdded6a60a967f58128cd4780c28ec6db"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-shutdown-flush-error.patch",
+      "sha256": "c7e11681b60a7041636cb8d72b37abbaff011e3a4ae9a940d7d4bde49b97a940"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-shutdown-iostatus.patch",
+      "sha256": "b4ba91ec7f220bb17760e8a481d09db7f88e1c1c7689124a7c3b0c44406c667c"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-virtio-blk-unrealize.patch",
+      "sha256": "323e3aabdc6dbf387d8f94a42fc924829a14f0127f3474d2da417feb48616f94"
+    },
+    {
+      "path": "scripts/ssi-lab/experiments/qemu-virtio-dsm-cache.patch",
+      "sha256": "77cba632205186e376df3428f68a84f5b77defe7f413b0f1847cad15d2eb4181"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-block-init.sh",
+      "sha256": "936189ad34875e7c68d538250f59cd6d63f870affc5acedd7b1cac4ae5596a58"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-clock.c",
+      "sha256": "d6b228a2f52f1b185b7bf35471d5fe09288511952f0bf4d7df9fea8816b98374"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-io-order.c",
+      "sha256": "fb4977f44baa9145ee6d0bb53f5f78d453dd6c113ca35e7099a924481c09b315"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-pause.c",
+      "sha256": "ce81e87f6864cfbde010197bac75442990e2784ced56821fece4404c46f31ee3"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-proof.c",
+      "sha256": "ca17145074ef01d0bf30c70588ac34e371fadc02d265c32255c1a444d34e3804"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-rtc.c",
+      "sha256": "f1670715f2c9bc440d3f6a1f77ab235e3958f5a137bdc0aa3274a75e0036424e"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-ssh-init.sh",
+      "sha256": "86edc67c03534f9669e366d02c875fb7d13109dd9e4fd178d5dc067a1fcae848"
+    },
+    {
+      "path": "scripts/ssi-lab/guest-stress.c",
+      "sha256": "137709a3dc8052423f7dea8a33ab3381240cee7fe351b9dd78eef271e44fad26"
+    },
+    {
+      "path": "scripts/ssi-lab/kernel-dsm-permissions.patch",
+      "sha256": "7d638dc2c317842ddcab76838ada00c04c28128cd0e5002ccd61ce1dc08f7bdb"
+    },
+    {
+      "path": "scripts/ssi-lab/kernel-page-reference.patch",
+      "sha256": "439e6893d323fa82bf67a51837adff1697c7e57912c5b92e59734b07910cd909"
+    },
+    {
+      "path": "scripts/ssi-lab/lab-firewall.py",
+      "sha256": "fe82b3525ff30e97ea6f6a3439f6326a0ed296df5b58b5443b4b738b6a8c40c2"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-close-devices.py",
+      "sha256": "53d67306d0930d1ee8e96af553319eed22e3c88b47aa7cdec598ef9bd30eaa19"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-copyset-retry.py",
+      "sha256": "855a676e5ea81c069c79f67c1c40dc7859bdf628691f3a50cc05337f6004b378"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-dsm-device.py",
+      "sha256": "6eb456ed52044f4adabc447d9e9732429278b0153469fdb5b3669f26cc4cf21b"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-dsm-latency.c",
+      "sha256": "09d10885439208e927e3b3acbc0772fd807e20c9248d245bfbc2e27fa92a9e36"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-dsm-latency.py",
+      "sha256": "7c5b15b3cefdb298b464d5ec1bac2435a4ee623a3b02dfc3e26d221345dd4008"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-dsm-request.c",
+      "sha256": "6d516d10aa1b3909eaa6682642518a1729836a7fb9d3b4d65d0762e6ce35acf4"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-dsm-startup.c",
+      "sha256": "93782726bf7460c365622b274199d8bafcf32ca6bbc321bf5d78f6b9306c3206"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-exchanges.py",
+      "sha256": "b947dd5aaa8ee45af94b317dfbb8560b0a705ff458741cf13232e92f80b8a794"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-failure-propagation.py",
+      "sha256": "168f3a4131d9cf6801b4e2a945119c69d46e3f96735bac2638b78a2f8434920c"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-grant-cancel.py",
+      "sha256": "b4ba2042fcb47b6c7c53e6a08bcd383eecb833b7d81015145b565f4031aedf1c"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-ioctl-admission.py",
+      "sha256": "739db87605c957a09c75b58f35efcd1ff2483ee26bb0bcf800f013cb94a525c6"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-kernel-close.py",
+      "sha256": "f2bf9231b63ee93228cebaa738e31f856d405a098e62fcd2a2fa60f3ba0196d5"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-kernel-drain.py",
+      "sha256": "ea7a73ef3e4f6a3143b1628f6de0730a2b1ad3969d8cbbab0a75c41b860be47e"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-pin-release.py",
+      "sha256": "c8ead31a25d7cd828f9c4ae5604484cfe0de61c323453d406de950d8ba07abcc"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-pins.py",
+      "sha256": "e4443452ffc78ac7ffd97d8d32adc47c749ee161f88fdcab4a4e68979203219f"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-pvclock.c",
+      "sha256": "a2de223cc75b8c0a811f8148e278d77a1f8f046b05c33190705df0d97be0955a"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-pvclock.py",
+      "sha256": "8e775e403d622489f854852bcee95f83bafa0b1f4e51b689abce68bb6e9d169e"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-qemu-map.py",
+      "sha256": "cedacd05bbf29d692d780d2bbc5b6993a7e32953be0e181c71b32ab011676c59"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-receive.py",
+      "sha256": "57d1f57cc0c9de7b67e6837837b37e06c9a823cdb3b1d4317376d38404ed57f6"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-request-cancel.py",
+      "sha256": "9ea48ed342fc0f4d575d3164e856a655637d2852889ec18bd3c284ffb638c6cd"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-request-safety.py",
+      "sha256": "42fb31eb56156c81c2217befcde9aa94a58bc677da0a4954019ac1acd319fd1e"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-router-startup.py",
+      "sha256": "0d5b6aeb4cd29bb6f1f1e47c3bb0bb26e6756d0a800d0e7269c29574c675f9c8"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-shutdown-flush.py",
+      "sha256": "fedd6f2bb2afe0bf6d7bb11f8cd7149c40ab17dc2cd31d28baec3157632f3d78"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-tcp-reply.py",
+      "sha256": "1c3df8683aa27d5b1eab49719a8af6081c1976824191a69131f05814b39fb97d"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-transport-fence.py",
+      "sha256": "4de1dfb65a445ce385d4becc5c483eaaadc21b66fd486fe9b07c562426dd08af"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-tsc-frequency.c",
+      "sha256": "fcbe61ba16cbfbca26aa902d278d3b6955f693b351188ff3cd607ba881367ad0"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-tsc-multivcpu.c",
+      "sha256": "393354da3523aa189b19f60d29a958c437e55caa5baf0e8b7168a4fececb2680"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-virtio-dsm-pins.py",
+      "sha256": "e14478bf6d35682e41f1a4fc0df90c8b4eef66fe389ac7ada0af93a10d5edf20"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-virtio-pending.py",
+      "sha256": "7ce0adb8529b9f625374477dd36b8aa4691992a7cfdae9bdf3f57e4c0747a61b"
+    },
+    {
+      "path": "scripts/ssi-lab/probe-write-grant.c",
+      "sha256": "9c2e01f767c33983a38b663e293417a361c5f83bb481f3ebfeab3353cafb26f1"
+    },
+    {
+      "path": "scripts/ssi-lab/profile-threads.py",
+      "sha256": "ee0c210b5f4ebfc865059040a272c0bf2ec42834ba1e9b1ddc1d4fc028f5c18c"
+    },
+    {
+      "path": "scripts/ssi-lab/qemu-single-node-routing.patch",
+      "sha256": "ba7e6f497700a55cd23abba97194e88efd7814f1033123208e1ad01e6dafc9db"
+    },
+    {
+      "path": "scripts/ssi-lab/run-node.sh",
+      "sha256": "2f09ad2800a7c8aa95ba3bb410a52de9fc51039d7f32e6e35e5ceb6258d3665b"
+    },
+    {
+      "path": "scripts/ssi-lab/summarize-profile.py",
+      "sha256": "44af63d17de8d0213103866a5cef3ffc8de43a240e445e35fd8e6ed402aef02d"
+    },
+    {
+      "path": "scripts/ssi-lab/test_atomic_grant.py",
+      "sha256": "f946cf9d9b081f7ced26a4ab6b6ca4635d94b528f35b3098431003a198593fcd"
+    },
+    {
+      "path": "scripts/ssi-lab/test_check_clock.py",
+      "sha256": "32cfa1d049712dd1d02ca12061a8be8a543f056e249a568594c5af8392540b12"
+    },
+    {
+      "path": "scripts/ssi-lab/test_check_io_order.py",
+      "sha256": "f0bc41df73f56d97dda0c44e55631387d8b1de3190e12292e6ae03bcd76ad0a4"
+    },
+    {
+      "path": "scripts/ssi-lab/test_check_ssh_boot.py",
+      "sha256": "5b62333f40644db7b4e5aaad92ecbc9c493d69905c42e92adec5b7544cf6dbea"
+    },
+    {
+      "path": "scripts/ssi-lab/test_check_stress.py",
+      "sha256": "08b54919e772f189c3ebbbf6ee080f2877a475a8c03dc2c7c37fe9fa1bce23aa"
+    },
+    {
+      "path": "scripts/ssi-lab/test_check_teardown.py",
+      "sha256": "2a4162a2ab1d2164e959b0d1a00ad399b1e74b12d1256dc8daaaa8cac9edc940"
+    },
+    {
+      "path": "scripts/ssi-lab/test_clock_resume.py",
+      "sha256": "4d9f5a5c0b303cccc81b5a108c9f9b55ef4c629d5a7f61ebb8d516c06bae54ba"
+    },
+    {
+      "path": "scripts/ssi-lab/test_clock_stalls.py",
+      "sha256": "84dad7eecb3186325afe91a744306cb4d1bfa2b16d512761628993d98d06c760"
+    },
+    {
+      "path": "scripts/ssi-lab/test_copyset_retry.py",
+      "sha256": "442134021504fad26cbd14b593013375547a894adfd6c36d72360a8bdf293c9e"
+    },
+    {
+      "path": "scripts/ssi-lab/test_dsm_latency.py",
+      "sha256": "b3cc77edfa68a5b0e046c2dde50e6792871c7e5a337ea061aa55f77f43365710"
+    },
+    {
+      "path": "scripts/ssi-lab/test_dsm_scheduling.py",
+      "sha256": "d592d38e7aafdc5b9e47db1ee03359b291b4798f441af5972060e3ab11021199"
+    },
+    {
+      "path": "scripts/ssi-lab/test_esxi_resources.py",
+      "sha256": "5ca2ac8df03fb9f3e96487159a053ceb585278cf2deae9785c0fee24b9d05799"
+    },
+    {
+      "path": "scripts/ssi-lab/test_exchanges.py",
+      "sha256": "8de2a8dfa0f6fee7d5eb1a0bdd4c8b528ec50f800b8f246ea5026742d0e564f3"
+    },
+    {
+      "path": "scripts/ssi-lab/test_failure_propagation.py",
+      "sha256": "3cd28c51329fa504c16dc257b699145ec973be0e6ac8f1aab45cdf92445f9d8b"
+    },
+    {
+      "path": "scripts/ssi-lab/test_grant_cancel.py",
+      "sha256": "14a968086b1b0b0810d5b8180d27b84875089badcc38f2c8d5bca2f51736ad6a"
+    },
+    {
+      "path": "scripts/ssi-lab/test_guest_irq.py",
+      "sha256": "0a38dad11aef3146f89a3506a17eba1c1062dd6a351fe60d8eb93121c55d04aa"
+    },
+    {
+      "path": "scripts/ssi-lab/test_guest_timers.py",
+      "sha256": "12f36c8eacfc543dc2f1fc3ac1731faf29c9c6939bf936774eb6a73e05243a36"
+    },
+    {
+      "path": "scripts/ssi-lab/test_host_timer_evidence.py",
+      "sha256": "9f3de6895c8499e4483bef68281302182a7da32a2f8ba225d193922a4f5183f1"
+    },
+    {
+      "path": "scripts/ssi-lab/test_host_timers.py",
+      "sha256": "2b122b2f735e346fbcd9d127cd589972b6cf761b68b621249efd38d0b53ed0cf"
+    },
+    {
+      "path": "scripts/ssi-lab/test_ioctl_admission.py",
+      "sha256": "6bca5d74188fa9a23fc624cbef81b0b98c33509718c64ccedfb04e474039996f"
+    },
+    {
+      "path": "scripts/ssi-lab/test_kernel_close.py",
+      "sha256": "04d7db68d4f55c6cf68123d9150dc23002a52b14b9cd048e3ace89474a29e216"
+    },
+    {
+      "path": "scripts/ssi-lab/test_kernel_drain.py",
+      "sha256": "989d73676cf7d799370c0f43781b056e8cdf1e1ceb53db8421f88831c4e539f9"
+    },
+    {
+      "path": "scripts/ssi-lab/test_launch_admission.py",
+      "sha256": "0a4df6c61ea76432ece0819fc5f4af002f57356b1b2a653705b430ec0fb1e708"
+    },
+    {
+      "path": "scripts/ssi-lab/test_launch_worker.py",
+      "sha256": "8d3a30df3e348a6567a63121f6b3c60dfc53f691b85a2d32ae86ebf1dac04766"
+    },
+    {
+      "path": "scripts/ssi-lab/test_physical_host.py",
+      "sha256": "0077c605eac200b5e0f7404fff2c8625d399913cb4813977a893657f68405c86"
+    },
+    {
+      "path": "scripts/ssi-lab/test_pin_release.py",
+      "sha256": "55dc0722b4215fac644d1e28f2de454983f559d2581996e47fc7ed591bf1656a"
+    },
+    {
+      "path": "scripts/ssi-lab/test_pins.py",
+      "sha256": "6e12f0f2faa9dea27d50a3084f9aaa8dcebd921859967fd759bff5d01193132c"
+    },
+    {
+      "path": "scripts/ssi-lab/test_preflight.py",
+      "sha256": "8edfe404de5d1bf72aaff299ec7d44980c449be6317319debff74e14e297b271"
+    },
+    {
+      "path": "scripts/ssi-lab/test_probe_pvclock.py",
+      "sha256": "0d8277d70fa0366b88c4d2fb6232ead01376e09b041221d784645057919960ea"
+    },
+    {
+      "path": "scripts/ssi-lab/test_profile.py",
+      "sha256": "2d032db03d42a16ca913e5721a691ac62f907429bb7d2afe4e240e4e678e4b4f"
+    },
+    {
+      "path": "scripts/ssi-lab/test_qemu_close.py",
+      "sha256": "cfb8a9248c4fa853d07075871f361035c75a1f5b5b95550f15011da08f3392bb"
+    },
+    {
+      "path": "scripts/ssi-lab/test_qemu_map.py",
+      "sha256": "239f1e83c7a0c38fa682e3700032b9ee229d51c59589646244ad75afe3cfe8e6"
+    },
+    {
+      "path": "scripts/ssi-lab/test_receive_evidence.py",
+      "sha256": "e75dfeb72db250a304d428d296afa2b636e1effb7a8ea1c72a6daf091adba285"
+    },
+    {
+      "path": "scripts/ssi-lab/test_request_cancel.py",
+      "sha256": "fe37ec9f84281a66237d360e5a07deb09e7b9fbee08e584b2b0e945f2737259c"
+    },
+    {
+      "path": "scripts/ssi-lab/test_request_safety.py",
+      "sha256": "9b855237b9134e26e8f5637d3d92befabd77156a81b6b4dacf1436bb1972c668"
+    },
+    {
+      "path": "scripts/ssi-lab/test_reset_router.py",
+      "sha256": "134552605d6bb914e11e038c2f99dbc322e4209d56b14eb19ff7e13b7a454406"
+    },
+    {
+      "path": "scripts/ssi-lab/test_residency_evidence.py",
+      "sha256": "1d726892a5d1342ba0ffe6ed796c55d44244a895d82ed0840364c2de91b8719b"
+    },
+    {
+      "path": "scripts/ssi-lab/test_router_drain.py",
+      "sha256": "74e5a58ba18485ef82f440fbf153942227536c83d4232c1f0f35e5a71405f245"
+    },
+    {
+      "path": "scripts/ssi-lab/test_router_startup.py",
+      "sha256": "3afe9457fe87e1ade6cce351a10e7d02566f408e4b202d0880a02ded78dfd1fa"
+    },
+    {
+      "path": "scripts/ssi-lab/test_rtc.py",
+      "sha256": "9c304c1edd837edd84b15dd8ad245fe9af414ab0ab7d741425f641c70cc0c5d8"
+    },
+    {
+      "path": "scripts/ssi-lab/test_rtc_evidence.py",
+      "sha256": "fb3dde03c1232b915b8850303fd27573133c5fc27d7f2cf9e8abf00a5a0dd72e"
+    },
+    {
+      "path": "scripts/ssi-lab/test_scheduling_evidence.py",
+      "sha256": "cedb95d8e25026db5d42f7441134479adb67df360958b1beae174cb21a010a3f"
+    },
+    {
+      "path": "scripts/ssi-lab/test_shutdown_flush.py",
+      "sha256": "6d083fc538a3c11329aac9e6528af055802fa0ce483398040e9a3845f6d16f2d"
+    },
+    {
+      "path": "scripts/ssi-lab/test_startup_evidence.py",
+      "sha256": "142c4941cb8276d484336b8c542afe41bb04066e0666396cf4fe75dc002e1470"
+    },
+    {
+      "path": "scripts/ssi-lab/test_steal_time.py",
+      "sha256": "86fa74e95ef225edac97259f3325b3d4ed74c2456413d0963924569033cab73e"
+    },
+    {
+      "path": "scripts/ssi-lab/test_tcp_reply.py",
+      "sha256": "e5f9dec30e5dd626bff79c9adcebc33a233bed2f1c5119bf08c19ca8e6f7f4ce"
+    },
+    {
+      "path": "scripts/ssi-lab/test_timekeeper_writer.py",
+      "sha256": "7c7b1c93005debfc52abc611ae3f29bda23d5f048ad2d46e41ee8c73de2524f0"
+    },
+    {
+      "path": "scripts/ssi-lab/test_timer_progress.py",
+      "sha256": "c7e5041f11b0faa4e92e317562024d77c5daa778d35af08c1b12088d3b0225e0"
+    },
+    {
+      "path": "scripts/ssi-lab/test_transport_fence.py",
+      "sha256": "33dbe325710393c9b93dea8b249a8dc316aa7df86e07f37aa7998409b21c5902"
+    },
+    {
+      "path": "scripts/ssi-lab/test_tsc_frequency.py",
+      "sha256": "0c7a9042729fabc8de5f599294dd406790731389199e6eae3113ade040d48d1b"
+    },
+    {
+      "path": "scripts/ssi-lab/test_tsc_multivcpu.py",
+      "sha256": "8584db93e3c6bd057f7f12cbbf47efefea3f00cc531917d2f93c06a99210e186"
+    },
+    {
+      "path": "scripts/ssi-lab/test_tsc_scaling.py",
+      "sha256": "26db38c2d11fc8c73e3309093b12e34051c5142d128b80c9c0862235075097db"
+    },
+    {
+      "path": "scripts/ssi-lab/test_vcpu_residency.py",
+      "sha256": "14cc9fe14a8c8759e2c6f8c9bfa45d9cd13e5b6dd3d3712fde80a61ee6140725"
+    },
+    {
+      "path": "scripts/ssi-lab/test_virtio_dsm_pins.py",
+      "sha256": "ef5d87c027008e427b16d8b9e1b0cd4f72faf5dd10007237200bbe156fd44f33"
+    },
+    {
+      "path": "scripts/ssi-lab/test_virtio_pending.py",
+      "sha256": "9ed8e2e70d1b8f34b2bf664afd752f8615d5d6eae337e51658088726e7ceb91a"
+    },
+    {
+      "path": "scripts/ssi-lab/test_write_grant.py",
+      "sha256": "02e63593ebca00ce236dfcd48c45eab1ff5c85815ceb36eb3dfe5cbbccbe8f74"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-clock-stalls.py",
+      "sha256": "fc6deaa1287037c9bce9908b38a14e69dac68f200a061b66c621d80e15477da4"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-dsm-latency.py",
+      "sha256": "b8edad0db10125494d24a58224b79138fcdebbbf8f8758ee5e4e5e59477e6888"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-dsm-scheduling.py",
+      "sha256": "99a20fd9d6097e85bdd67a06f306ed534bb13172b072d8c7e56fbbb1f980e812"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-guest-timers.sh",
+      "sha256": "273eece901af1a4267a560453bde2034298fdc37ce1730f60eb9d7351c7ade64"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-host-timers.py",
+      "sha256": "b5be119ec8ed0c24fd0c133e9d61ad3f418e2c4e4febb7192f622378df8c46be"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-kernel-close.py",
+      "sha256": "ce80a3b7565b92c271ff25af3f2fd6d94222cccbfc8848e9e8b460346f2c7686"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-teardown.py",
+      "sha256": "02aa15ea3889abdd668e631389c1b404a0ecad4a34ca15df3b2bf09c3dd5d51d"
+    },
+    {
+      "path": "scripts/ssi-lab/trace-vcpu-residency.py",
+      "sha256": "40ffc4304224b883a974e632216295a8e58d0828a1374f50f3bb2ec2f1b052e2"
+    },
+    {
+      "path": "src/placement.rs",
+      "sha256": "22e5d7b20170021f63d7647b05b16e4cd89460cbf8325fc83611793ef6030403"
+    },
+    {
+      "path": "src/ssi.rs",
+      "sha256": "013f6f93d4dd1d66f61baeb5ae4491e7dbb75972174fe0dd3395e7c58eaf9942"
+    },
+    {
+      "path": "src/ssi_launch.rs",
+      "sha256": "b9769af04abc25c5711d2a34af96e0ffb7f92dcb526b8860faf59643034d2e5c"
+    },
+    {
+      "path": "src/ssi_launch/README.md",
+      "sha256": "c0f073f0f7c71f72d37f6665f361f4adfdfd8abbe55fbacd9007877d64f93af7"
+    },
+    {
+      "path": "src/ssi_launch/model.rs",
+      "sha256": "ec9643a94f160faa86d51b7665982e46b97100d7ed93835d7249bb59bc3bffb3"
+    },
+    {
+      "path": "src/ssi_launch/session.rs",
+      "sha256": "f30ae554be186f4db58544351fcc7139b62900eb93c9b430aa8555e668653011"
+    },
+    {
+      "path": "src/ssi_launch/session/tests.rs",
+      "sha256": "86f8dac45b1224e12fd68a0b6593feb7ff8c02a60eca580d12aa6b57dd18e5e7"
+    },
+    {
+      "path": "src/ssi_launch_worker.py",
+      "sha256": "72b5e7491a834645bb635fb128d76b6ebc7723b239f514a220f0b2da31299475"
+    },
+    {
+      "path": "src/ssi_probe.py",
+      "sha256": "c2f068a8d0f5674fea4c72e44dab3c69adf8dbfa463af34c6a99d3a26fd121b1"
+    },
+    {
+      "path": "src/storage.rs",
+      "sha256": "5a02347b523af7162f4fb1abf9bb9c0a4a7adaf563457ef8eef858668cb5a9b5"
+    },
+    {
+      "path": "tests/ssi_launch.rs",
+      "sha256": "fca2d5cb22ce306db7ca76c97b39f3b72468aca7bb2ce5efd16c9ce16c3c67c3"
+    },
+    {
+      "path": "tests/ssi_preflight.rs",
+      "sha256": "0a7e5e4516acd62b125ae683dc7b4b815089a58494dfe282c468c045af8af7e1"
+    },
+    {
+      "path": "tests/storage_placement.rs",
+      "sha256": "38d54fb5adc1f50e11da706432876b59e272d4e742e0774b7d7e7d2b62ccd9ed"
+    }
+  ]
+}

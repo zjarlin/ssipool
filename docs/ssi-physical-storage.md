@@ -1,0 +1,79 @@
+# 跨物理机接入与无 RAID 存储
+
+SSH 能连接、KVM 能创建 VM，只说明设备有资格进入实验。当前一个 Linux 客体的跨节点执行仍仅在同一 ESXi 的两台实验 VM 中验证，尚无跨物理机容量、性能或故障接管证据。
+
+**2026-11-09 状态更新：**下文 11 月 7 日的独立 Ubuntu 物理候选已重装为 ESXi，其原 Linux、Docker、Worker 和 TSC 预检结果都是历史证据，不能当作当前在线能力。新 ESXi 的一台专用副本已先建立回退快照、断网启动并重建 machine-id、D-Bus 与 SSH 身份，再按新 MAC 修正 DHCP/Netplan；重启核对后连接实验网。它当前运行原版内核，另一台副本仍关机。新候选实测原生 TSC 为 **2,095,148 kHz**，与原节点 **2,394,374 kHz** 的组合被真实预检拒绝，退出码 **2**。两组 VM 不属于同一 ESXi；这尚不证明同一 Linux 客体跨物理执行。新记录见[候选证据](evidence/ssi-tsc-frequency-candidate-20261109.json)，历史证据保留原样。
+
+2026-11-07 已把一台独立 x86 物理机接入为真实构建 Worker：Ubuntu 26.04.1、双路 Xeon E5-2620 v4、16 个物理核/32 个线程、约 60.5 GiB 内存。普通用户可访问 KVM API 12；该机已安装 Docker 29.1.3，并在隔离 VM 中完成一次实际 KVM 执行和一次离线 Rust Cargo 编译。公开记录只保留脱敏指标、哈希和验收范围；地址、账号、密码、磁盘序列号与私有路径不进入仓库。
+
+实际完成的单机实验使用 8 vCPU、12 GiB 内存和 100 GiB 稀疏 overlay，只向宿主回环转发 SSH。QEMU 没有传入业务块设备，没有配置 virtfs/9p，也没有挂载宿主目录。采样窗口内八条 KVM vCPU 线程均产生执行时间，随后客体正常关机、QEMU 退出。另一项构建任务通过控制面调度到该物理机，在 `rust:1.93-alpine`、4 CPU 和 1 GiB 内存的离线容器内完成 `cargo build --release`，产物在物理机上运行成功，并确认容器已清理。
+
+这些结果证明真实计算卸载与隔离 VM 在物理机上运行，**不证明**同一个 Linux 客体或同一进程跨越两台物理机。ARM64 入口不能直接运行该 x86-64 产物；架构、启动方式和可执行格式必须明确区分。脱敏原始记录见 [物理主机与构建证据](evidence/ssi-physical-host-20261107.json)，可用 `python3 scripts/ssi-lab/check-physical-host.py docs/evidence/ssi-physical-host-20261107.json` 检查。
+
+## 时钟与隔离先于加入
+
+重装前物理 Linux 与重装后新 ESXi 的 Linux 候选均支持 `KVM_CAP_GET_TSC_KHZ`，不支持 `KVM_CAP_TSC_CONTROL`。现有 QEMU 候选要求执行节点使用相同的 TSC 频率；当前偏移校准不能解决不同频率的长期漂移。现已核验实际频率，仍需实现并验证跨频率时间转换与完整 CPU 能力交集。不能去掉相等检查就宣称兼容。
+
+11 月 9 日的[原版 KVM 频率实验](ssi-tsc-frequency.md)进一步证明：两台原实验 VM 与新 ESXi 的独立候选均出现升频 SET 和运行后 GET 成功、实际 RDTSC 维持各自原生速率；降频 SET 失败时 GET 也已经改变。新候选的升频请求为 **2,514,177 kHz**，实测仍约 **2,095,148 kHz**。这是分别运行的单 vCPU 有限观测，不能作为跨频率准入或长期同步依据。
+
+2026-11-07 已用 Rust CLI 完成真实接口预检。ESXi 两个实验 VM 的 `KVM_GET_TSC_KHZ` 均为 **2,394,374**；当时的物理 Linux 候选为 **2,095,147**，双方 `KVM_CAP_TSC_CONTROL` 均为零。候选能免交互 SSH，KVM API 12、TSC_ADJUST 和偏移查询接口成立，但当前运行时无法配对这两个频率。物理机当时安装了 Docker、云镜像和 QEMU 并完成上述隔离实验；**未安装研究内核或 Ceph，也未启动跨物理同一客体。** 不能把原生频率相近、逻辑 CPU 数量、SSH 登录或任务调度成功当作跨物理 SSI。
+
+复现入口不需要 `sshpool init` 或 Worker 注册，目标使用本地已有的 SSH 别名：
+
+```sh
+cargo run --locked -- ssi-preflight lab-vm-a lab-vm-b
+cargo run --locked -- ssi-preflight lab-vm-a physical-candidate
+# 可使用已有的私有 OpenSSH 配置；主机密钥必须预先验证。
+sshpool ssi-preflight --ssh-config /path/to/private/ssh_config node-a node-b
+```
+
+退出码零只表示 `native_tsc_precheck_passed`；硬件前提或 SSH 检查失败返回二，无效参数返回非零。命令不修改节点配置，不安装密钥、不运行 sudo，不访问块设备或公司目录。探针通过标准 KVM 接口创建一台空 VM、两个 vCPU，查询后按子到父顺序关闭四个描述符；它没有调用 `KVM_RUN`。报告只展示各节点容量，不相加。相同 machine-id 的摘要用于拒绝重复目标；克隆 VM 需要先正确配置独立身份，不同摘要仍不能证明独立物理主机。
+
+[原始实测记录](evidence/ssi-physical-preflight-20261107.json) 包含同宿主对照、跨物理频率拒绝、两个别名实际指向同一主机的拒绝、单端 SSH 拒绝连接，以及候选上内核、选定配置文件哈希和设备列表的前后核对。它不证明整个文件系统逐字节不变。采集地址已脱敏；私有原始文件哈希保留。
+
+首版探针曾把空 VM 的 `clock_flags=0` 判为失败；向临时 vCPU 初始化 TSC MSR 后仍为零。空 VM 尚未执行，不具备运行中时钟验证语义。因此最终预检明确限定为频率和接口，报告 `running_clock_verified=false`；QEMU 实际启动时要求可靠快照 flags 包含 14 的检查保持原样。初版失败记录保留，不能拿预检通过替代真正的运行时快照、长期漂移或定时器验收。完整客体 CPU 模型交集也尚未验证，本轮仅读取 KVM 可提供的 TSC_ADJUST。
+
+实验应运行在专用、可回退的 Linux VM 中，限额覆盖 CPU、内存和磁盘占用，不把研究内核装到承载原有数据的物理宿主。记录 VM 与物理宿主的对应关系；同一机器上的多个 VM 仍只有一个物理故障域。
+
+接入验收必须重做单节点对照，再运行同一客体、同一 PID 的跨宿主多线程内存校验。结合两台物理机的 KVM vCPU 线程与驻留页观测证明实际执行归属，并测单调时钟、长期漂移、定时器和网络异常。只有这些通过后，才考虑超过任一节点配额的驻留内存工作集；不能用 swap 或文件映射充当 DRAM 汇聚。
+
+## 可以不用 RAID，但必须实现跨机冗余
+
+Ceph 可以直接管理独立磁盘（通常一盘一个 OSD），无需先做硬件 RAID。CRUSH 的副本故障域应设置为物理主机；三副本通常需要至少三个独立存储主机，约三分之一原始容量可用，另需预留恢复余量。只有两个物理存储主机时，不能假装部署三台 VM 就得到三主机容错。仲裁、OSD 副本与允许写入的 `min_size` 是不同约束，应按实际故障模型设计。
+
+SSI 负责 CPU、内存和设备的跨节点语义，Ceph 负责存储副本及故障恢复。二者需要集成，但不能互相替代：存储副本保住磁盘，不会自动恢复唯一存在于失效主机 RAM 中的客体状态。数据库还需要真实的 `fsync`、事务确认、崩溃恢复、写入隔离和 RPO/RTO 测试。
+
+新盘加入前必须按稳定硬件身份确认归属，检查分区、挂载、文件系统签名、LVM、md、ZFS 和已有业务使用情况。**检测不到文件系统不等于空盘。** 11 月 7 日的物理候选存在一块未挂载且文件系统类型未识别的既有分区，当时没有格式化、挂载或创建 LVM/md/RAID/OSD；该历史清单不能推断重装后的磁盘布局与归属。新 ESXi 的存储接入必须重新核对。初期只能使用明确新建、配额受控的实验镜像文件；这些文件不能证明真实掉盘后的持久化可靠性。
+
+Ceph 尚未部署。将来若确认既有盘或多个新增盘完全归集群所有，可以让 Ceph 直接管理独立设备而无需先组 RAID；每个物理主机作为独立故障域，并先核算三副本、仲裁和恢复预留。仅两台物理机不能冒充三故障域。
+
+### 先核算，再承诺
+
+上面这些口径已经落成可执行的核算：`sshpool storage-plan --topology <file>`（`src/placement.rs`）只读一份拓扑 JSON，输出故障域数、原始容量、恢复预留和可写容量，并在做不到时**拒绝承诺**（退出码 2）。
+
+```json
+{
+  "schema": 1,
+  "replica_count": 3,
+  "min_size": 2,
+  "recovery_reserve_permille": 200,
+  "monitor_count": 3,
+  "hosts": [
+    { "name": "store-a", "failure_domain": "rack-a", "devices": [{ "name": "sda", "size_bytes": 4000000000000 }] },
+    { "name": "store-b", "failure_domain": "rack-b", "devices": [{ "name": "sdb", "size_bytes": 6000000000000 }] },
+    { "name": "store-c", "failure_domain": "rack-c", "devices": [{ "name": "sdc", "size_bytes": 8000000000000 }] }
+  ]
+}
+```
+
+核算规则直接对应前面几条约束：
+
+- 同一 `failure_domain` 的多个 VM 合并成一个域；`vm_of` 指向的物理宿主与其 VM 也合并。**给 VM 换个 `failure_domain` 名字不会多出故障域**，反而被拒绝。
+- 物理宿主和它的 VM 都申报磁盘时拒绝核算 —— 否则同一批容量会被算两次，可写容量虚高。
+- 可写容量不是「原始容量 ÷ 副本数」这种近似：副本必须落在不同域，上限解 `副本数 × D ≤ Σ min(域可用容量, D)`，也就是最小域会直接封顶（三块 4/6/8 TB 盘、3 副本、20% 预留时是 **3.2 TB**，不是 4.8 TB）。
+- `recovery_reserve_permille` 必填，缺省成 0 等于虚报容量；`deny_unknown_fields` 让拼错的键在解析阶段失败。
+- `monitor_count` 只接受奇数且不超过域数；仲裁与数据副本是不同约束。
+- 拒绝承诺时报告里 **可用容量是 0、容错数为 `null`**，脚本忽略布尔字段也拿不到可写数字。
+
+这是规划算术，不证明 Ceph 已按此放置、不证明掉盘后的持久性，也不能替代 `storage-admission` 对真实磁盘的归属核对。真实实测记录见 [验证文档](validation.md#storage-placement)。
+实现和验收拆在 [物理主机与存储场景](../features/190-ssi-physical-storage.feature)，整体仍受 [严格 SSI](../features/110-pooled-linux.feature) 与 [数据库恢复](../features/120-stateful-recovery.feature) 的门槛约束。
